@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS if, switch~case</title>
+<script>
+    //if (논리연산) {}
+    //if (논리연산) {} else {}
+    //if (논리연산) {} else if () {} else {}
+    if (true) {
+        document.write("if문이 true인 경우 출력", "<br>");
+    }
+    if (false) {
+        document.write("if문이 false인 경우 출력", "<br>");
+    }
+    document.write("<hr>");
+    
+    var bool = confirm("true 출력 <확인>선택, false출력 <취소>선택");
+    if (bool) {
+        document.write("확인을 선택 - 리턴값: " + bool, "<br>");
+    } else {
+        document.write("취소를 선택 - 리턴값: " + bool, "<br>");
+    }
+    document.write("<hr>");
+    
+    //-----------------
+    //성적을 입력받고 점수에 따라 평가결과 화면 표시
+    //90 이상: A학점, 80이상: B, 70이상: C, 60이상: D, 60미만: F 출력
+    //(실습)
+    var jumsu = prompt("점수를 입력하세요", 0);
+    document.write("입력된 값: " + jumsu, "<br>");
+    //값체크가 완료 되었다는 가정하에
+    if (jumsu >= 90) {
+        document.write("A학점");
+    } else if (jumsu >= 80) {
+        document.write("B학점");
+    } else if (jumsu >= 70) {
+        document.write("C학점");
+    } else if (jumsu >= 60) {
+        document.write("D학점");
+    } else {
+        document.write("F학점");
+    }
+    document.write("<hr>");
+    
+    //--------------------------------
+    //switch ~ case 문
+    jumsu = Math.floor(jumsu / 10);
+    document.write("jumsu : " + jumsu, "<br>");
+    switch (jumsu) {
+        case 10:
+            document.write("A학점", "<br>");
+            break;
+        case 9:
+            document.write("A학점", "<br>");
+            break;
+        case 8:
+            document.write("B학점", "<br>");
+            break;
+        case 7:
+            document.write("C학점", "<br>");
+            break;
+        case 6:
+            document.write("D학점", "<br>");
+            break;
+        default:
+            document.write("F학점", "<br>");
+            break;
+    }
+</script>
+</head>    
+
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
